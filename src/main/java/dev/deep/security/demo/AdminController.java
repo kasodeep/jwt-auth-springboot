@@ -24,7 +24,6 @@ public class AdminController {
 
     @PostMapping
     @PreAuthorize("hasAuthority('admin:create')")
-    @Hidden
     public String post() {
         return "POST:: admin controller";
     }

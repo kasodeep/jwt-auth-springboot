@@ -6,6 +6,9 @@ import lombok.Data;
 
 @Data
 @Builder
+/*
+* This class objects are used to get api request to register the user.
+* */
 public class RegisterRequest {
 
     private String firstname;

@@ -15,6 +15,9 @@ import java.util.Map;
 import java.util.function.Function;
 
 @Service
+/*
+* This is the re-usable jwt service class which provides various info about the token and user.
+* */
 public class JwtService {
 
     @Value("${application.security.jwt.secret-key}")

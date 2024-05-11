@@ -17,9 +17,9 @@ import io.swagger.v3.oas.annotations.servers.Server;
                         name = "Kasodariya Deep",
                         email = "deepkasodariya44@gmail.com"
                 ),
-                description = "OpenApi documentation for Spring Security",
-                title = "OpenApi specification - Deep",
-                version = "1.0",
+                description = "Authentication app for validating users.",
+                title = "JWT-Auth",
+                version = "1.1.7",
                 license = @License(
                         name = "MIT",
                         url = "https://some-url.com"
@@ -39,6 +39,7 @@ import io.swagger.v3.oas.annotations.servers.Server;
         }
 )
 
+// Config for swagger to make the call to endpoints.
 @SecurityScheme(
         name = "bearerAuth",
         description = "JWT Authentication",

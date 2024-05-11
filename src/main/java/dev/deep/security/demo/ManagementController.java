@@ -17,7 +17,7 @@ public class ManagementController {
 
     @Operation(
             description = "Get Endpoint for Manager",
-            summary = "To Test the Authorization for Mana",
+            summary = "To Test the Authorization for Manager",
             responses = {
                     @ApiResponse(
                             description = "Success",

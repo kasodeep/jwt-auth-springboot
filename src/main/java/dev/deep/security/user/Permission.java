@@ -3,6 +3,9 @@ package dev.deep.security.user;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
+/**
+ * This enum contains the definition of each permission.
+ */
 @RequiredArgsConstructor
 public enum Permission {
 

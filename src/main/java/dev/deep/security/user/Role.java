@@ -9,6 +9,9 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * This enum has a set of roles, which are converted to authorities.
+ */
 @RequiredArgsConstructor
 public enum Role {
 

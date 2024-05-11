@@ -14,6 +14,9 @@ import java.util.List;
 @Entity
 @Builder
 @Table(name = "users")
+/*
+  This class is the basic entity user. It is inherited by UserDetails.
+  */
 public class User implements UserDetails {
 
     @Id
@@ -24,6 +27,7 @@ public class User implements UserDetails {
 
     private String lastname;
 
+    @Column(unique = true)
     private String email;
 
     private String password;

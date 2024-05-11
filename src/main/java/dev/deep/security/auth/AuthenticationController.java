@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.io.IOException;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/v1/auth")
-@RequiredArgsConstructor
 @Tag(name = "Authentication")
 public class AuthenticationController {
 

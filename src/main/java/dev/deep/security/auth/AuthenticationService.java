@@ -4,6 +4,7 @@ import dev.deep.security.config.JwtService;
 import dev.deep.security.token.Token;
 import dev.deep.security.token.TokenRepository;
 import dev.deep.security.token.TokenType;
+import dev.deep.security.user.Role;
 import dev.deep.security.user.User;
 import dev.deep.security.user.UserRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -41,7 +42,7 @@ public class AuthenticationService {
                 .lastname(request.getLastname())
                 .email(request.getEmail())
                 .password(passwordEncoder.encode(request.getPassword()))
-                .role(request.getRole())
+                .role(request.getRole() != null ? request.getRole() : Role.USER)
                 .build();
 
         // Saving And Generating the User.
@@ -60,6 +61,7 @@ public class AuthenticationService {
      * Authenticate the User.
      */
     public AuthenticationResponse authenticate(AuthenticationRequest request) {
+        // Comes from Application Config.
         authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(
                         request.getEmail(),

@@ -6,6 +6,9 @@ import lombok.Data;
 
 @Data
 @Builder
+/*
+* This class objects are used to send api response.
+* */
 public class AuthenticationResponse {
 
     @JsonProperty("access_token")

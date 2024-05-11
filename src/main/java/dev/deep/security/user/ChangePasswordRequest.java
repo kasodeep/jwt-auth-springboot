@@ -5,6 +5,9 @@ import lombok.Data;
 
 @Data
 @Builder
+/*
+* This class objects are used to get the api request.
+* */
 public class ChangePasswordRequest {
 
     private String currentPassword;

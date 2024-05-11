@@ -8,6 +8,10 @@ import lombok.Data;
 @Data
 @Builder
 @Entity
+@Table(name = "tokens")
+/*
+  The token entity the user uses to verify/authenticate himself.
+  */
 public class Token {
 
     @Id

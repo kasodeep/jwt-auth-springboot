@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.security.Principal;
 
+@RequiredArgsConstructor
 @RestController
 @RequestMapping("/api/v1/users")
-@RequiredArgsConstructor
 @Tag(name = "User")
 public class UserController {
 
