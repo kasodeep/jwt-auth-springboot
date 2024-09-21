@@ -5,13 +5,13 @@ import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Data;
 
+/**
+ * The token entity the user uses to verify/authenticate himself.
+ */
 @Data
 @Builder
 @Entity
 @Table(name = "tokens")
-/*
-  The token entity the user uses to verify/authenticate himself.
-  */
 public class Token {
 
     @Id

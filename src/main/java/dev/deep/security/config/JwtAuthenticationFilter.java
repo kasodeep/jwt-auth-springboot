@@ -18,11 +18,11 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
+/**
+ * This class is used to filter the token and verify the credentials.
+ */
 @Component
 @RequiredArgsConstructor
-/*
- * This class is used to filter the token and verify the credentials.
- * */
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
     private final JwtService jwtService;

@@ -4,11 +4,11 @@ import dev.deep.security.user.Role;
 import lombok.Builder;
 import lombok.Data;
 
+/**
+ * This class objects are used to get api request to register the user.
+ */
 @Data
 @Builder
-/*
-* This class objects are used to get api request to register the user.
-* */
 public class RegisterRequest {
 
     private String firstname;

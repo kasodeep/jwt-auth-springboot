@@ -11,7 +11,7 @@ import java.util.Optional;
 public class ApplicationAuditAware implements AuditorAware<Integer> {
 
     /**
-     * Method to return current auditor's id'.
+     * Method to return current auditor's id.
      */
     @Override
     public Optional<Integer> getCurrentAuditor() {

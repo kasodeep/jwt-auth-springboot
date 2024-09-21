@@ -10,13 +10,13 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.List;
 
+/**
+ * This class is the basic entity User. It is inherited by UserDetails.
+ */
 @Data
 @Entity
 @Builder
 @Table(name = "users")
-/*
-  This class is the basic entity user. It is inherited by UserDetails.
-  */
 public class User implements UserDetails {
 
     @Id

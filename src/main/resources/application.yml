@@ -1,16 +1,15 @@
 spring:
-#  DB Configuration.
+  #  DB Configuration.
   datasource:
-    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/jwtauth
-    username: Deep
-    password:
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:postgresql://localhost:5432/jwt_auth
+    username: postgres
+    password: root
 
-#  Hibernate Config.
+  #  Hibernate Config.
   jpa:
     hibernate:
       ddl-auto: update
-    show-sql: false
+    show-sql: true
     properties:
       hibernate:
         format_sql: true
