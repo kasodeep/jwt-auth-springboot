@@ -1,9 +1,9 @@
 spring:
   #  DB Configuration.
   datasource:
-    url: jdbc:postgresql://localhost:5432/jwt_auth
-    username: postgres
-    password: root
+    url: jdbc:postgresql://ep-shy-flower-a14e45hd-pooler.ap-southeast-1.aws.neon.tech/jwt_auth
+    username:
+    password:
 
   #  Hibernate Config.
   jpa:
