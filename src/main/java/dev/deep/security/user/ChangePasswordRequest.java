@@ -1,5 +1,6 @@
 package dev.deep.security.user;
 
+import jakarta.validation.constraints.NotBlank;
 import lombok.Builder;
 import lombok.Data;
 
@@ -10,6 +11,7 @@ import lombok.Data;
 @Builder
 public class ChangePasswordRequest {
 
+    @NotBlank
     private String currentPassword;
 
     private String newPassword;

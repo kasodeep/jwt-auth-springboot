@@ -115,7 +115,6 @@ public class AuthenticationService {
      * Method For Refreshing the Token.
      */
     public void refreshToken(HttpServletRequest request, HttpServletResponse response) throws IOException {
-
         // Checking for the Tokens.
         final String authHeader = request.getHeader(HttpHeaders.AUTHORIZATION);
         final String refreshToken;

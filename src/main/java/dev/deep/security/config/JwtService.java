@@ -14,10 +14,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
 
+/**
+ * This is the re-usable jwt service class which provides various info about the token and user.
+ */
 @Service
-/*
-* This is the re-usable jwt service class which provides various info about the token and user.
-* */
 public class JwtService {
 
     @Value("${application.security.jwt.secret-key}")
@@ -61,9 +61,7 @@ public class JwtService {
         return buildToken(extraClaims, userDetails, jwtExpiration);
     }
 
-    public String generateRefreshToken(
-            UserDetails userDetails
-    ) {
+    public String generateRefreshToken(UserDetails userDetails) {
         return buildToken(new HashMap<>(), userDetails, refreshExpiration);
     }
 

@@ -14,7 +14,7 @@
     <name>JWT-Auth</name>
     <description>App to demonstrate the working of JWT authentication.</description>
     <properties>
-        <java.version>23</java.version>
+        <java.version>21</java.version>
     </properties>
     <dependencies>
         <dependency>
